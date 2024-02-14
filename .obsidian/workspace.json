@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "924a86d91b3c46e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "navigation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c49f4d5b51b6644a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Active Directory Lab Build/Building AD Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Active Directory Lab Build/Building AD Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Active Directory Lab Build/Building AD Lab.md"
               }
             }
           }
@@ -169,10 +193,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "328ec7a65284d885",
+  "active": "c49f4d5b51b6644a",
   "lastOpenFiles": [
-    "templates/basic.template.md",
+    "Pasted image 20240213224140.png",
+    "Pasted image 20240213223747.png",
+    "Pasted image 20240213223026.png",
+    "Pasted image 20240213223021.png",
+    "Pasted image 20240213222858.png",
+    "Pasted image 20240213222711.png",
+    "Pasted image 20240213222116.png",
+    "Pasted image 20240213220038.png",
+    "Pasted image 20240213213131.png",
+    "Pasted image 20240213213009.png",
+    "navigation.md",
+    "Active Directory Lab Build/Building AD Lab.md",
+    "Active Directory Lab Build",
     "README.md",
+    "templates/basic.template.md",
     "templates",
     "New folder"
   ]
