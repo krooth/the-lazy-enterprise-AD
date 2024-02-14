@@ -59,7 +59,6 @@ date: 13-02-2024
 		```
 		- Once we run the command above, we'll begin to see the progress of the installation:
 			- ![[Pasted image 20240213223747.png]]
-			- ![[Pasted image 20240214231223.png]]
 			- This will be the result once the installation is complete:
 				- ![[Pasted image 20240213224140.png]]
 		- 
