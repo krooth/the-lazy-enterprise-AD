@@ -64,7 +64,6 @@ date: 13-02-2024
 		- 
 - **Promote and Install ADDS Forest**
 	- Now when adding these services, we'll be providing number of parameters, some standard set of options, others specific to our env't like the name of our Forest/Domain:
-	- 
 # {{References}}
 - https://www.wikihow.com/Use-VMware-Workstation
 - https://www.youtube.com/watch?v=nvdnQX9UkMY

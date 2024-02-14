@@ -2,5 +2,6 @@
   "obsidian-git",
   "templater-obsidian",
   "table-editor-obsidian",
-  "recent-files-obsidian"
+  "recent-files-obsidian",
+  "obsidian-vimrc-support"
 ]
