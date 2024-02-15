@@ -47,9 +47,11 @@
             "id": "c49f4d5b51b6644a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240214231223.png"
+                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -128,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240214231223.png",
+                "file": "Active Directory Lab Build/Building AD Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240214231223.png",
+                "file": "Active Directory Lab Build/Building AD Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240214231223.png"
+                "file": "Active Directory Lab Build/Building AD Lab.md"
               }
             }
           }
@@ -194,19 +196,20 @@
   },
   "active": "c49f4d5b51b6644a",
   "lastOpenFiles": [
+    "Pasted image 20240215222225.png",
+    "Pasted image 20240215222154.png",
+    "Pasted image 20240215222137.png",
+    "navigation.md",
+    "Pasted image 20240214231223.png",
     "Pasted image 20240213224140.png",
     "Pasted image 20240213223021.png",
     "Pasted image 20240213222858.png",
     "Pasted image 20240213222711.png",
     "Pasted image 20240213220038.png",
     "Active Directory Lab Build/Building AD Lab.md",
-    "Pasted image 20240214231223.png",
     "New folder",
     "Pasted image 20240213223747.png",
     "Pasted image 20240213223026.png",
-    "Pasted image 20240213222116.png",
-    "Pasted image 20240213213131.png",
-    "navigation.md",
     "Active Directory Lab Build",
     "README.md",
     "templates/basic.template.md",
