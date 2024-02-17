@@ -1,7 +1,3 @@
----
-tags: 
-date: 13-02-2024
----
 
 # Building AD Lab
 ### Requirements ###
