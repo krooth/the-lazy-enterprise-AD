@@ -6,5 +6,6 @@
   "obsidian-vimrc-support",
   "obsidian-image-toolkit",
   "obsidian-local-images-plus",
-  "copy-url-in-preview"
+  "copy-url-in-preview",
+  "obsidian-file-path-to-uri"
 ]
