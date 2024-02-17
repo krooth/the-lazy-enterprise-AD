@@ -23,8 +23,8 @@
 			- ![[../imgs/Pasted image 20240213213131.png]]
 	- Now once we've opened PowerShell, we are looking for our network adapters interface index, we can retrieve that by executing the command:
 - **Set IPv4 Address**
-		```
-		Get-NetAdapter
+		- ```
+			Get-NetAdapter
 		```
 		- ![[../imgs/Pasted image 20240213220038.png]]
 	- To set a new IPv4 address we can use d/t commands, we'll use the New-NetIPAddress command:
@@ -36,7 +36,7 @@
 			New-NetIPAddress –IPAddress <ip_address> -DefaultGateway <default_gateway> -PrefixLength <subnet_mask_in_bit_format> -InterfaceIndex (Get-NetAdapter).InterfaceIndex
 			```
 	- We can check if we succeeded in changing the IP, by using the "ipconfig" command;
-			```
+			```PowerShell
 			ifconfig
 			```
 - **Set DNS Servers**
@@ -50,6 +50,7 @@
 #### Installing ADDS Role and Features ####
 - Run PowerShell as admin like before
 - **Adding ADDS Services**
+	- We first need to add the Active Directory Domain service:
 		```
 		Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 		```
@@ -61,7 +62,21 @@
 - **Promote and Install ADDS Forest**
 	- Now when adding these services, we'll be providing number of parameters, some standard set of options, others specific to our env't like the name of our Forest/Domain:
 	- 
+
+| **Parameters** | **Description** | **Value** |
+| ---- | ---- | ---- |
+| -DomainName | This is the name of our domain. | kroothy.io |
+| -InstallDNS | Active Directory is heavily reliant and integrated with DNS thus we do need to install DNS almost always, unless in d/t specialized configurations, which we're not using here. | $true |
+| -CreateDNSDelegation | Used to automatically create delegation of control (DoC) relationships between the newly installed domain controller (DC) and other existing DC, in our we won't have any other DCs so we don't need this. | $false |
+| -DomainMode | Specifies the functional level of the first domain in the creation of  a new forest. We are using the latest Windows Server 2016 mode, which has a value of '7' or 'WinThreshold'. | 7 |
+| -ForestMode | Similarly this option specified the forest functional level. | 7 |
+| -DatabasePath | Specifies the fully qualified, non-Universal Naming Convention (UNC) path to directory of the local server, that is to contain the domain database. | C:\Windows\NTDS |
+| -SysvolPath | Specifies the path to where the Sysvol file is written. | C:\Windows\SYSVOL |
+| -LogPath | Specifies the path log files for this operation (Install-ADDSForest) file is written.  | C:\Windows\NTDS |
+| -DomainNetbiosName | Specifies the NetBIOS name for the root domain in the new forest. |  |
 # {{References}}
-- https://www.wikihow.com/Use-VMware-Workstation
-- https://www.youtube.com/watch?v=nvdnQX9UkMY
-- https://www.virtualbox.org/manual/ch01.html
+- [VMware Windows Server Virtualization](https://www.wikihow.com/Use-VMware-Workstation)
+- [VirtualBox For Beginners](https://www.youtube.com/watch?v=nvdnQX9UkMY)
+- [VirtualBox Documentation](https://www.virtualbox.org/manual/ch01.html)
+- [Microsoft Guide for installing AD DS via PS](https://learn.microsoft.com/en-us/powershell/module/addsdeployment/install-addsforest?view=windowsserver2019-ps)
+- 
