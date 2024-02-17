@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "imgs/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "imgs/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -196,22 +196,22 @@
   },
   "active": "c49f4d5b51b6644a",
   "lastOpenFiles": [
-    "Pasted image 20240215222225.png",
-    "Pasted image 20240215222154.png",
-    "Pasted image 20240215222137.png",
     "navigation.md",
-    "Pasted image 20240214231223.png",
-    "Pasted image 20240213224140.png",
-    "Pasted image 20240213223021.png",
-    "Pasted image 20240213222858.png",
-    "Pasted image 20240213222711.png",
-    "Pasted image 20240213220038.png",
+    "imgs/Pasted image 20240213213009.png",
+    "imgs/Pasted image 20240215222225.png",
     "Active Directory Lab Build/Building AD Lab.md",
+    "imgs",
+    "imgs/Pasted image 20240215222154.png",
+    "imgs/Pasted image 20240215222137.png",
+    "imgs/Pasted image 20240214231223.png",
+    "imgs/Pasted image 20240213224140.png",
+    "imgs/Pasted image 20240213223021.png",
+    "imgs/Pasted image 20240213222858.png",
+    "imgs/Pasted image 20240213222711.png",
+    "imgs/Pasted image 20240213220038.png",
     "New folder",
-    "Pasted image 20240213223747.png",
-    "Pasted image 20240213223026.png",
     "Active Directory Lab Build",
-    "README.md",
+    "imgs/README.md",
     "templates/basic.template.md",
     "templates"
   ]

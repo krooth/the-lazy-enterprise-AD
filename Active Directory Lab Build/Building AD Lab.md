@@ -22,15 +22,15 @@ date: 13-02-2024
 - **Running PowerShell as Administrator**
 	- Usually when dealing with servers we'd want a static IP addressing, especially if we're running DNS service on it, thus we'll be assigning static IP to our server here:
 	- Open PowerShell as administrator
-		- ![[Pasted image 20240213213009.png]]
+		- ![[../imgs/Pasted image 20240213213009.png]]
 		- Or open run and type in "powershell", and hit Ctrl + Alt + Enter:
-			- ![[Pasted image 20240213213131.png]]
+			- ![[../imgs/Pasted image 20240213213131.png]]
 	- Now once we've opened PowerShell, we are looking for our network adapters interface index, we can retrieve that by executing the command:
 - **Set IPv4 Address**
 		```
 		Get-NetAdapter
 		```
-		- ![[Pasted image 20240213220038.png]]
+		- ![[../imgs/Pasted image 20240213220038.png]]
 	- To set a new IPv4 address we can use d/t commands, we'll use the New-NetIPAddress command:
 		```
 			New-NetIPAddress –IPAddress <ip_address>-PrefixLength <subnet_mask_in_bit_format> -DefaultGateway <default_gateway>  -InterfaceIndex <interface_index_retrieved_earlier>
@@ -48,7 +48,7 @@ date: 13-02-2024
 	```
 	Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –ServerAddresses <Your_AD_IP>
 	```
-	- ![[Pasted image 20240213223026.png]]
+	- ![[../imgs/Pasted image 20240213223026.png]]
 	- We can check if DNS and IP is set accordingly by using the command, "ipconfig"
 
 #### Installing ADDS Role and Features ####
@@ -58,9 +58,9 @@ date: 13-02-2024
 		Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 		```
 		- Once we run the command above, we'll begin to see the progress of the installation:
-			- ![[Pasted image 20240213223747.png]]
+			- ![[../imgs/Pasted image 20240213223747.png]]
 			- This will be the result once the installation is complete:
-				- ![[Pasted image 20240213224140.png]]
+				- ![[../imgs/Pasted image 20240213224140.png]]
 		- 
 - **Promote and Install ADDS Forest**
 	- Now when adding these services, we'll be providing number of parameters, some standard set of options, others specific to our env't like the name of our Forest/Domain:
