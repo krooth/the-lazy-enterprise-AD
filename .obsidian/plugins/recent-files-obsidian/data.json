@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Building AD Lab",
       "path": "Active Directory Lab Build/Building AD Lab.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "Pasted image 20240213220038",
       "path": "imgs/Pasted image 20240213220038.png"
-    },
-    {
-      "basename": "README",
-      "path": "imgs/README.md"
     }
   ],
   "omittedPaths": [],

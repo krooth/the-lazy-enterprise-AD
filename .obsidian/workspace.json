@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imgs/README.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imgs/README.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md"
+                "file": "README.md"
               }
             }
           }
@@ -194,12 +194,12 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "c49f4d5b51b6644a",
+  "active": "d8a300a291541424",
   "lastOpenFiles": [
+    "Active Directory Lab Build/Building AD Lab.md",
     "navigation.md",
     "imgs/Pasted image 20240213213009.png",
     "imgs/Pasted image 20240215222225.png",
-    "Active Directory Lab Build/Building AD Lab.md",
     "imgs",
     "imgs/Pasted image 20240215222154.png",
     "imgs/Pasted image 20240215222137.png",
@@ -211,7 +211,7 @@
     "imgs/Pasted image 20240213220038.png",
     "New folder",
     "Active Directory Lab Build",
-    "imgs/README.md",
+    "README.md",
     "templates/basic.template.md",
     "templates"
   ]
