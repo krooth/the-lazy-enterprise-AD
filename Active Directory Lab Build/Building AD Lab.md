@@ -17,6 +17,9 @@
 
 > [!IMPORTANT]
 > Replace the IPv4 prompts with your server IPv4 address, likewise for the ADDS Forest installation, replace the names according to your own lab naming preference.
+
+---
+
 #### Assigning Static IP ####
 - **Running PowerShell as Administrator**
 	- Usually when dealing with servers we'd want a static IP addressing, especially if we're running DNS service on it, thus we'll be assigning static IP to our server here:
@@ -49,6 +52,23 @@
 	```
 	 ![[../imgs/Pasted image 20240213223026.png]]
 	- We can check if DNS and IP is set accordingly by using the command, `ipconfig`.
+
+---
+#### Renaming the Server HostName####
+- Run PowerShell as admin like before
+> [!CAUTION]
+> Replace the name of the server according to you setup
+
+- **Set Hostname**
+	```PowerShell
+	Rename-Computer -ComputerName <Your_Old_ServerName> -NewName <Your_New_ServerName> -DomainCredential <DomainName\Username> -Password <Password> -Force -Restart
+	```
+> [!NOTE]
+> - DomainName can be your ComputerName\Username, Eg: Win2019\Administrator.
+> - This task like all the others can be done via GUI.
+> - The Server/Computer needs to restart after hostname change.
+
+---
 
 #### Installing ADDS Role and Features ####
 - Run PowerShell as admin like before
@@ -89,8 +109,26 @@
 > [!Note] 
 > It will take some time to complete the installation. i
 > After completion it will output that our forest is installed and restart the server.
-	  
-	  
+
+  - After this we're all set we just need to check if ADDS Forest installed and configured, we could do that with a couple of PowerShell commands:
+	```PowerShell
+	Get-ADForest 
+	Get-ADDomain
+	Get-ADDomainController
+	Get-ADReplicationSite
+	Get-Service adws,kdc,netlogon,dns
+	Get-smbshare SYSVOL
+	```
+- Here is how it looks when running the commands above:
+	![[../imgs/Pasted image 20240218155052.png]]
+	![[../imgs/Pasted image 20240218155109.png]]
+	![[../imgs/Pasted image 20240218155249.png]]
+	![[../imgs/Pasted image 20240218155309.png]]
+	![[../imgs/Pasted image 20240218155334.png]]
+	![[../imgs/Pasted image 20240218155407.png]]
+**Complete**
+- We have stood up a Domain Controller, fully functional with no records inside it, we'll be populating it with other tools online.
+- Next up is [[AD Enterprise Population]]
 # {{References}}
 - [VMware Windows Server Virtualization](https://www.wikihow.com/Use-VMware-Workstation)
 - [VirtualBox For Beginners](https://www.youtube.com/watch?v=nvdnQX9UkMY)

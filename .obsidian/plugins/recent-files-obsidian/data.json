@@ -5,6 +5,10 @@
       "path": "Active Directory Lab Build/Building AD Lab.md"
     },
     {
+      "basename": "AD Enterprise Population",
+      "path": "Active Directory Lab Build/AD Enterprise Population.md"
+    },
+    {
       "basename": "DTE-L0150",
       "path": "DTE-L0150.md"
     },
