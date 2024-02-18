@@ -23,46 +23,46 @@
 			- ![[../imgs/Pasted image 20240213213131.png]]
 	- Now once we've opened PowerShell, we are looking for our network adapters interface index, we can retrieve that by executing the command:
 - **Set IPv4 Address**
-		- ```
-			Get-NetAdapter
-		```
-		- ![[../imgs/Pasted image 20240213220038.png]]
+	```PowerShell
+		Get-NetAdapter
+	```
+	 ![[../imgs/Pasted image 20240213220038.png]]
 	- To set a new IPv4 address we can use d/t commands, we'll use the New-NetIPAddress command:
-		```
+	![PowerShell Input][PowershellInput]
+		```PowerShell
 			New-NetIPAddress –IPAddress <ip_address>-PrefixLength <subnet_mask_in_bit_format> -DefaultGateway <default_gateway>  -InterfaceIndex <interface_index_retrieved_earlier>
 		```
 		- We can also chain the two commands in to one buy using:
-			```
+			```PowerShell
 			New-NetIPAddress –IPAddress <ip_address> -DefaultGateway <default_gateway> -PrefixLength <subnet_mask_in_bit_format> -InterfaceIndex (Get-NetAdapter).InterfaceIndex
 			```
 	- We can check if we succeeded in changing the IP, by using the "ipconfig" command;
-			```PowerShell
-			ifconfig
-			```
+		```PowerShell
+		ifconfig
+		```
 - **Set DNS Servers**
 	- We can use the command Set-DNSClientServerAddress command to set DNS for the server, now we can have multiple DNS servers configured on our server, but one of them ideally the primary needs to be the IP address of the DNS server, in this case the active directory server:
-	```
+	```PowerShell
 	Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –ServerAddresses <Your_AD_IP>
 	```
-	- ![[../imgs/Pasted image 20240213223026.png]]
-	- We can check if DNS and IP is set accordingly by using the command, "ipconfig"
+	 ![[../imgs/Pasted image 20240213223026.png]]
+	- We can check if DNS and IP is set accordingly by using the command, `ipconfig`.
 
 #### Installing ADDS Role and Features ####
 - Run PowerShell as admin like before
 - **Adding ADDS Services**
 	- We first need to add the Active Directory Domain service:
-		```
-		Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
-		```
-		- Once we run the command above, we'll begin to see the progress of the installation:
-			- ![[../imgs/Pasted image 20240213223747.png]]
+	```PowerShell
+	Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
+	```
+	
+	- Once we run the command above, we'll begin to see the progress of the installation:
+			 ![[../imgs/Pasted image 20240213223747.png]]
 			- This will be the result once the installation is complete:
-				- ![[../imgs/Pasted image 20240213224140.png]]
-		- 
+			 ![[../imgs/Pasted image 20240213224140.png]]
 - **Promote and Install ADDS Forest**
 	- Now when adding these services, we'll be providing number of parameters, some standard set of options, others specific to our env't like the name of our Forest/Domain:
-	- 
-
+	
 | **Parameters** | **Description** | **Value** |
 | ---- | ---- | ---- |
 | -DomainName | This is the name of our domain. | kroothy.io |
@@ -72,8 +72,13 @@
 | -ForestMode | Similarly this option specified the forest functional level. | 7 |
 | -DatabasePath | Specifies the fully qualified, non-Universal Naming Convention (UNC) path to directory of the local server, that is to contain the domain database. | C:\Windows\NTDS |
 | -SysvolPath | Specifies the path to where the Sysvol file is written. | C:\Windows\SYSVOL |
-| -LogPath | Specifies the path log files for this operation (Install-ADDSForest) file is written.  | C:\Windows\NTDS |
-| -DomainNetbiosName | Specifies the NetBIOS name for the root domain in the new forest. |  |
+| -LogPath | Specifies the path log files for this operation (Install-ADDSForest) file is written. | C:\Windows\NTDS |
+| -DomainNetbiosName | Specifies the NetBIOS name for the root domain in the new forest. | kroothy |
+- Installing ADDS Forest:
+	```PowerShell
+	Install-ADDSForest -DomainName <Your_Full_AD_Forest_Name> -InstallDns:$true  -CreateDnsDelegation:$false -DomainMode "7" -ForestMode "7" -DatabasePath <Your_DB_Directory_Path> -SysvolPath <Your_SYSvol_Directory_Path> -LogPath <Your_Log_Directory_Path> -DomainNetbiosName <Your_AD_Forest_NetBIOS_Name>
+	```
+	
 # {{References}}
 - [VMware Windows Server Virtualization](https://www.wikihow.com/Use-VMware-Workstation)
 - [VirtualBox For Beginners](https://www.youtube.com/watch?v=nvdnQX9UkMY)
