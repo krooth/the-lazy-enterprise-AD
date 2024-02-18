@@ -83,6 +83,14 @@
 	Install-ADDSForest -DomainName <Your_Full_AD_Forest_Name> -InstallDns:$true  -CreateDnsDelegation:$false -DomainMode "7" -ForestMode "7" -DatabasePath <Your_DB_Directory_Path> -SysvolPath <Your_SYSvol_Directory_Path> -LogPath <Your_Log_Directory_Path> -DomainNetbiosName <Your_AD_Forest_NetBIOS_Name>
 	```
 	![[../imgs/Pasted image 20240218134918.png]]
+	- Right after this we'll be prompted ==SafeModeAdministratorPassword==, we should enter a long password with good complexity if we're deploying this in a production environment.
+		 ![[../imgs/Pasted image 20240218141207.png]]
+	- We should the finally confirm the operation, we can choose 'A' to say yes to all prompts.
+	  > [!Note] 
+	  > It will take some time to complete the installation. i
+	  > After completion it will output that our forest is installed and restart the server.
+	  
+	  
 # {{References}}
 - [VMware Windows Server Virtualization](https://www.wikihow.com/Use-VMware-Workstation)
 - [VirtualBox For Beginners](https://www.youtube.com/watch?v=nvdnQX9UkMY)
