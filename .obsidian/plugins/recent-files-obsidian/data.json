@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Building AD Lab",
-      "path": "Active Directory Lab Build/Building AD Lab.md"
-    },
-    {
       "basename": "AD Enterprise Population",
       "path": "Active Directory Lab Build/AD Enterprise Population.md"
+    },
+    {
+      "basename": "github_walkthrough.template",
+      "path": "templates/github_walkthrough.template.md"
+    },
+    {
+      "basename": "Building AD Lab",
+      "path": "Active Directory Lab Build/Building AD Lab.md"
     },
     {
       "basename": "DTE-L0150",
