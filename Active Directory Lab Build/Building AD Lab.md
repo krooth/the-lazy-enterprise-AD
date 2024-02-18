@@ -28,7 +28,6 @@
 	```
 	 ![[../imgs/Pasted image 20240213220038.png]]
 	- To set a new IPv4 address we can use d/t commands, we'll use the New-NetIPAddress command:
-	![PowerShell Input][PowershellInput]
 		```PowerShell
 			New-NetIPAddress –IPAddress <ip_address>-PrefixLength <subnet_mask_in_bit_format> -DefaultGateway <default_gateway>  -InterfaceIndex <interface_index_retrieved_earlier>
 		```
@@ -78,7 +77,8 @@
 	```PowerShell
 	Install-ADDSForest -DomainName <Your_Full_AD_Forest_Name> -InstallDns:$true  -CreateDnsDelegation:$false -DomainMode "7" -ForestMode "7" -DatabasePath <Your_DB_Directory_Path> -SysvolPath <Your_SYSvol_Directory_Path> -LogPath <Your_Log_Directory_Path> -DomainNetbiosName <Your_AD_Forest_NetBIOS_Name>
 	```
-	
+	[[imgs/ae4e0df41f15f4674f09721ac10e4b86_MD5.jpeg|Open: Pasted image 20240218134112.png]]
+![[imgs/ae4e0df41f15f4674f09721ac10e4b86_MD5.jpeg]]
 # {{References}}
 - [VMware Windows Server Virtualization](https://www.wikihow.com/Use-VMware-Workstation)
 - [VirtualBox For Beginners](https://www.youtube.com/watch?v=nvdnQX9UkMY)
