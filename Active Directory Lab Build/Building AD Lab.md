@@ -14,6 +14,9 @@
 
 ### AD Lab Build Process ###
 - Now there are ways to got about things in windows or any operating system, using the GUI or the command line, in our case we'll be using PowerShell, using GUI is just as effective, but learning the PowerShell way will help us get familiarize with PowerShell as that's one important component of windows with regards to administration and security as well.
+
+> [!IMPORTANT]
+> Replace the IPv4 prompts with your server IPv4 address, likewise for the ADDS Forest installation, replace the names according to your own lab naming preference.
 #### Assigning Static IP ####
 - **Running PowerShell as Administrator**
 	- Usually when dealing with servers we'd want a static IP addressing, especially if we're running DNS service on it, thus we'll be assigning static IP to our server here:
@@ -49,6 +52,8 @@
 
 #### Installing ADDS Role and Features ####
 - Run PowerShell as admin like before
+> [!REMINDER]
+> Replace the names and the specific paths, according to your setup.
 - **Adding ADDS Services**
 	- We first need to add the Active Directory Domain service:
 	```PowerShell
