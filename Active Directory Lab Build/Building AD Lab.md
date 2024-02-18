@@ -77,8 +77,7 @@
 	```PowerShell
 	Install-ADDSForest -DomainName <Your_Full_AD_Forest_Name> -InstallDns:$true  -CreateDnsDelegation:$false -DomainMode "7" -ForestMode "7" -DatabasePath <Your_DB_Directory_Path> -SysvolPath <Your_SYSvol_Directory_Path> -LogPath <Your_Log_Directory_Path> -DomainNetbiosName <Your_AD_Forest_NetBIOS_Name>
 	```
-	[[imgs/ae4e0df41f15f4674f09721ac10e4b86_MD5.jpeg|Open: Pasted image 20240218134312.png]]
-![[imgs/ae4e0df41f15f4674f09721ac10e4b86_MD5.jpeg]]
+	![[../imgs/Pasted image 20240218134918.png]]
 # {{References}}
 - [VMware Windows Server Virtualization](https://www.wikihow.com/Use-VMware-Workstation)
 - [VirtualBox For Beginners](https://www.youtube.com/watch?v=nvdnQX9UkMY)

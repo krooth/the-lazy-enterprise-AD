@@ -155,12 +155,15 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-local-images-plus:Local Images Plus  0.15.9\r\nLocalize attachments (plugin folder)": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "dbaef2ae4883efde",
   "lastOpenFiles": [
+    "imgs/Pasted image 20240218134918.png",
+    "imgs/Pasted image 20240218134753.png",
+    "imgs/Pasted image 20240218134700.png",
+    "imgs/Pasted image 20240218134340.png",
     "imgs/Pasted image 20240218134312.png",
     "imgs/Pasted image 20240218134259.png",
     "imgs/ae4e0df41f15f4674f09721ac10e4b86_MD5.jpeg",
@@ -174,10 +177,6 @@
     "imgs/Pasted image 20240215222225.png",
     "imgs",
     "imgs/Pasted image 20240215222154.png",
-    "imgs/Pasted image 20240215222137.png",
-    "imgs/Pasted image 20240214231223.png",
-    "imgs/Pasted image 20240213224140.png",
-    "imgs/Pasted image 20240213223021.png",
     "New folder",
     "Active Directory Lab Build",
     "templates/basic.template.md",
