@@ -52,7 +52,7 @@
 
 #### Installing ADDS Role and Features ####
 - Run PowerShell as admin like before
-> [!REMINDER]
+> [!CAUTION]
 > Replace the names and the specific paths, according to your setup.
 - **Adding ADDS Services**
 	- We first need to add the Active Directory Domain service:
