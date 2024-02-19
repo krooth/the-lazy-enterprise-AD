@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "navigation",
+      "path": "navigation.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "DTE-L0150",
       "path": "DTE-L0150.md"
-    },
-    {
-      "basename": "navigation",
-      "path": "navigation.md"
     },
     {
       "basename": "Pasted image 20240213213009",

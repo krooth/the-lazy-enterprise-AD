@@ -9,7 +9,7 @@
 ---
 
 ### The Infosec Projects
-- The blogs regarding the projects down below can be found in my website, https://kroothy.com and also the project steps can also be found using [[navigation]] file.
+- The blogs regarding the projects down below can be found in my website, https://kroothy.com and also the project steps can also be found using [navigation](https://github.com/krooth/lazy-AD/blob/main/navigation.md) file.
 - If you find this project and would like to help out / contribute, you can reach out to me or submit a pull request.
 #### AD Assessment and Hardening ####
 - PingCastle Assessment
