@@ -24,15 +24,18 @@
 - **Running PowerShell as Administrator**
 	- Usually when dealing with servers we'd want a static IP addressing, especially if we're running DNS service on it, thus we'll be assigning static IP to our server here:
 	- Open PowerShell as administrator
-		- ![[../imgs/Pasted image 20240213213009.png]]
+		- [[imgs/0f58363b5df432a1d8e0290414218a7e_MD5.jpeg|Open: Pasted image 20240213213009.png]]
+![[imgs/0f58363b5df432a1d8e0290414218a7e_MD5.jpeg]]
 		- Or open run and type in "powershell", and hit Ctrl + Alt + Enter:
-			- ![[../imgs/Pasted image 20240213213131.png]]
+			- [[imgs/63a43c50fce837f80715a558917d33ab_MD5.jpeg|Open: Pasted image 20240213213131.png]]
+![[imgs/63a43c50fce837f80715a558917d33ab_MD5.jpeg]]
 	- Now once we've opened PowerShell, we are looking for our network adapters interface index, we can retrieve that by executing the command:
 - **Set IPv4 Address**
 	```PowerShell
 		Get-NetAdapter
 	```
-	 ![[../imgs/Pasted image 20240213220038.png]]
+	 [[imgs/67abadc86a8535a8e9dfd977b5947553_MD5.jpeg|Open: Pasted image 20240213220038.png]]
+![[imgs/67abadc86a8535a8e9dfd977b5947553_MD5.jpeg]]
 	- To set a new IPv4 address we can use d/t commands, we'll use the New-NetIPAddress command:
 		```PowerShell
 			New-NetIPAddress –IPAddress <ip_address>-PrefixLength <subnet_mask_in_bit_format> -DefaultGateway <default_gateway>  -InterfaceIndex <interface_index_retrieved_earlier>
@@ -50,7 +53,8 @@
 	```PowerShell
 	Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –ServerAddresses <Your_AD_IP>
 	```
-	 ![[../imgs/Pasted image 20240213223026.png]]
+	 [[imgs/c20ce2ae12c63333732ad831f7192818_MD5.jpeg|Open: Pasted image 20240213223026.png]]
+![[imgs/c20ce2ae12c63333732ad831f7192818_MD5.jpeg]]
 	- We can check if DNS and IP is set accordingly by using the command, `ipconfig`.
 
 ---
@@ -81,9 +85,11 @@
 	```
 	
 	- Once we run the command above, we'll begin to see the progress of the installation:
-			 ![[../imgs/Pasted image 20240213223747.png]]
+			 [[imgs/fdc8e8341629a20cdbe947d9a16ce888_MD5.jpeg|Open: Pasted image 20240213223747.png]]
+![[imgs/fdc8e8341629a20cdbe947d9a16ce888_MD5.jpeg]]
 			- This will be the result once the installation is complete:
-			 ![[../imgs/Pasted image 20240213224140.png]]
+			 [[imgs/76183196526bf282a63449ed9a8dcd96_MD5.jpeg|Open: Pasted image 20240213224140.png]]
+![[imgs/76183196526bf282a63449ed9a8dcd96_MD5.jpeg]]
 - **Promote and Install ADDS Forest**
 	- Now when adding these services, we'll be providing number of parameters, some standard set of options, others specific to our env't like the name of our Forest/Domain:
 	
@@ -102,9 +108,11 @@
 	```PowerShell
 	Install-ADDSForest -DomainName <Your_Full_AD_Forest_Name> -InstallDns:$true  -CreateDnsDelegation:$false -DomainMode "7" -ForestMode "7" -DatabasePath <Your_DB_Directory_Path> -SysvolPath <Your_SYSvol_Directory_Path> -LogPath <Your_Log_Directory_Path> -DomainNetbiosName <Your_AD_Forest_NetBIOS_Name>
 	```
-	![[../imgs/Pasted image 20240218134918.png]]
+	[[imgs/ae4e0df41f15f4674f09721ac10e4b86_MD5.jpeg|Open: Pasted image 20240218134918.png]]
+![[imgs/ae4e0df41f15f4674f09721ac10e4b86_MD5.jpeg]]
 	- Right after this we'll be prompted ==SafeModeAdministratorPassword==, we should enter a long password with good complexity if we're deploying this in a production environment.
-		 ![[../imgs/Pasted image 20240218141207.png]]
+		 [[imgs/f0cc1eb2fdd1d029b93988a5b5dfdee6_MD5.jpeg|Open: Pasted image 20240218141207.png]]
+![[imgs/f0cc1eb2fdd1d029b93988a5b5dfdee6_MD5.jpeg]]
 	- We should the finally confirm the operation, we can choose 'A' to say yes to all prompts.
 > [!Note] 
 > It will take some time to complete the installation. i
@@ -120,12 +128,18 @@
 	Get-smbshare SYSVOL
 	```
 - Here is how it looks when running the commands above:
-	![[../imgs/Pasted image 20240218155052.png]]
-	![[../imgs/Pasted image 20240218155109.png]]
-	![[../imgs/Pasted image 20240218155249.png]]
-	![[../imgs/Pasted image 20240218155309.png]]
-	![[../imgs/Pasted image 20240218155334.png]]
-	![[../imgs/Pasted image 20240218155407.png]]
+	[[imgs/76144759f46c54196fba71bd1853d9ae_MD5.jpeg|Open: Pasted image 20240218155052.png]]
+![[imgs/76144759f46c54196fba71bd1853d9ae_MD5.jpeg]]
+	[[imgs/835c7980dd8658173e9bb8980c00888f_MD5.jpeg|Open: Pasted image 20240218155109.png]]
+![[imgs/835c7980dd8658173e9bb8980c00888f_MD5.jpeg]]
+	[[imgs/c2a4dd9007fc8512c56aaa8db7da9c90_MD5.jpeg|Open: Pasted image 20240218155249.png]]
+![[imgs/c2a4dd9007fc8512c56aaa8db7da9c90_MD5.jpeg]]
+	[[imgs/8d3a212d010df0e83eb3fb9f929c88ad_MD5.jpeg|Open: Pasted image 20240218155309.png]]
+![[imgs/8d3a212d010df0e83eb3fb9f929c88ad_MD5.jpeg]]
+	[[imgs/c5f867a9bf1fa9898c02d2c3cfa44c41_MD5.jpeg|Open: Pasted image 20240218155334.png]]
+![[imgs/c5f867a9bf1fa9898c02d2c3cfa44c41_MD5.jpeg]]
+	[[imgs/fa8bdebbf3c7d89bc92b5dcf541cb7af_MD5.jpeg|Open: Pasted image 20240218155407.png]]
+![[imgs/fa8bdebbf3c7d89bc92b5dcf541cb7af_MD5.jpeg]]
 **Complete**
 - We have stood up a Domain Controller, fully functional with no records inside it, we'll be populating it with other tools online.
 - Next up is [[AD Enterprise Population]]
