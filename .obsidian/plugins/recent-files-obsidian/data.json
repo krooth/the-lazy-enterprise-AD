@@ -1,20 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "navigation",
-      "path": "navigation.md"
-    },
-    {
-      "basename": "AD Enterprise Population",
-      "path": "Active Directory Lab Build/AD Enterprise Population.md"
-    },
-    {
       "basename": "Building AD Lab",
       "path": "Active Directory Lab Build/Building AD Lab.md"
     },
     {
       "basename": "README",
       "path": "README.md"
+    },
+    {
+      "basename": "navigation",
+      "path": "navigation.md"
+    },
+    {
+      "basename": "AD Enterprise Population",
+      "path": "Active Directory Lab Build/AD Enterprise Population.md"
     }
   ],
   "omittedPaths": [],

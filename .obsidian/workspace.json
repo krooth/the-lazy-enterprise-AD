@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "navigation.md",
+                "file": "Active Directory Lab Build/Building AD Lab.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "navigation.md",
+                "file": "Active Directory Lab Build/Building AD Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "navigation.md",
+                "file": "Active Directory Lab Build/Building AD Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "navigation.md"
+                "file": "Active Directory Lab Build/Building AD Lab.md"
               }
             }
           }
@@ -196,8 +196,9 @@
   },
   "active": "c49f4d5b51b6644a",
   "lastOpenFiles": [
-    "Untitled.md",
+    "README.md",
     "navigation.md",
+    "Untitled.md",
     "DTE-L0150.md",
     "Active Directory Lab Build/AD Enterprise Population.md",
     "imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg",
@@ -214,7 +215,6 @@
     "imgs",
     "New folder",
     "Active Directory Lab Build",
-    "README.md",
     "templates/basic.template.md",
     "templates"
   ]
