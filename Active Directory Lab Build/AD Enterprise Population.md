@@ -51,8 +51,8 @@ New-ADUser -SamAccountName <User Name> -Name <Full Name> -UserPrinciapal "<User 
 	```
 - After cloning the repo, we should be able to run badblood:
 ```Powershell
-cd .\badblood\
-.\Invoke-BadBlood.ps1
+	cd .\badblood\
+	.\Invoke-BadBlood.ps1
 ```
 - We are then prompted several times, to press any keys, and also we're promoted to type 'badblood' to add some randomness to the generated Users, Groups and Computers.
 [[imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg|Open: Pasted image 20240225001922.png]]
