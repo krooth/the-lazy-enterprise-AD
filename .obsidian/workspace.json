@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md",
+                "file": "navigation.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md",
+                "file": "navigation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md",
+                "file": "navigation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md"
+                "file": "navigation.md"
               }
             }
           }
@@ -196,6 +196,10 @@
   },
   "active": "c49f4d5b51b6644a",
   "lastOpenFiles": [
+    "Untitled.md",
+    "navigation.md",
+    "DTE-L0150.md",
+    "Active Directory Lab Build/AD Enterprise Population.md",
     "imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg",
     "imgs/Pasted image 20240225001922.png",
     "imgs/Pasted image 20240224222400.png",
@@ -204,15 +208,10 @@
     "imgs/340050bbed463a2c8a71c41ae6bf1b24_MD5.jpeg",
     "imgs/Pasted image 20240224221135.png",
     "Active Directory Lab Build/Building AD Lab.md",
-    "Active Directory Lab Build/AD Enterprise Population.md",
     "imgs/fa8bdebbf3c7d89bc92b5dcf541cb7af_MD5.jpeg",
     "imgs/c5f867a9bf1fa9898c02d2c3cfa44c41_MD5.jpeg",
     "imgs/8d3a212d010df0e83eb3fb9f929c88ad_MD5.jpeg",
-    "imgs/c2a4dd9007fc8512c56aaa8db7da9c90_MD5.jpeg",
     "imgs",
-    "Untitled.md",
-    "DTE-L0150.md",
-    "navigation.md",
     "New folder",
     "Active Directory Lab Build",
     "README.md",
