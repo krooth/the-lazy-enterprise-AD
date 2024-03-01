@@ -24,15 +24,15 @@
 - **Running PowerShell as Administrator**
 	- Usually when dealing with servers we'd want a static IP addressing, especially if we're running DNS service on it, thus we'll be assigning static IP to our server here:
 	- Open PowerShell as administrator
-		- ![[imgs/c57d2f866388d63381d357ab05d121c5_MD5.jpeg]]
+		- ![](../imgs/c57d2f866388d63381d357ab05d121c5_MD5.jpeg)
 		- Or open run and type in "powershell", and hit Ctrl + Alt + Enter:
-		- ![[imgs/db3e4c9fbc904b0a50c350e97e20b9fb_MD5.jpeg]]
+		- ![](../imgs/db3e4c9fbc904b0a50c350e97e20b9fb_MD5.jpeg)
 	- Now once we've opened PowerShell, we are looking for our network adapters interface index, we can retrieve that by executing the command:
 - **Set IPv4 Address**
 	```PowerShell
 		Get-NetAdapter
 	```
-	 ![[imgs/bb72b610a2804892a1e27cf4f12dafed_MD5.jpeg]]
+	 ![](../imgs/bb72b610a2804892a1e27cf4f12dafed_MD5.jpeg)
 	- To set a new IPv4 address we can use d/t commands, we'll use the New-NetIPAddress command:
 		```PowerShell
 			New-NetIPAddress –IPAddress <ip_address>-PrefixLength <subnet_mask_in_bit_format> -DefaultGateway <default_gateway>  -InterfaceIndex <interface_index_retrieved_earlier>
@@ -50,7 +50,7 @@
 	```PowerShell
 	Set-DNSClientServerAddress –InterfaceIndex (Get-NetAdapter).InterfaceIndex –ServerAddresses <Your_AD_IP>
 	```
-![[imgs/2b9e6e5aee00f450ab2360ad210825be_MD5.jpeg]]
+![](../imgs/2b9e6e5aee00f450ab2360ad210825be_MD5.jpeg)
 	- We can check if DNS and IP is set accordingly by using the command, `ipconfig`.
 
 ---
@@ -81,9 +81,9 @@
 	```
 	
 	- Once we run the command above, we'll begin to see the progress of the installation:
-			 ![[imgs/4b3e9cb4e070aca26c57e1107ac26d06_MD5.jpeg]]
+			 ![](../imgs/4b3e9cb4e070aca26c57e1107ac26d06_MD5.jpeg)
 			- This will be the result once the installation is complete:
-			 ![[imgs/230003853bcb2c940c57a3f7a77df850_MD5.jpeg]]
+			 ![](../imgs/230003853bcb2c940c57a3f7a77df850_MD5.jpeg)
 - **Promote and Install ADDS Forest**
 	- Now when adding these services, we'll be providing number of parameters, some standard set of options, others specific to our env't like the name of our Forest/Domain:
 	
@@ -102,9 +102,9 @@
 	```PowerShell
 	Install-ADDSForest -DomainName <Your_Full_AD_Forest_Name> -InstallDns:$true  -CreateDnsDelegation:$false -DomainMode "7" -ForestMode "7" -DatabasePath <Your_DB_Directory_Path> -SysvolPath <Your_SYSvol_Directory_Path> -LogPath <Your_Log_Directory_Path> -DomainNetbiosName <Your_AD_Forest_NetBIOS_Name>
 	```
-	![[imgs/f1d4c9677821a8173916384f4a3c1b6d_MD5.jpeg]]
+	![](../imgs/f1d4c9677821a8173916384f4a3c1b6d_MD5.jpeg)
 	- Right after this we'll be prompted ==SafeModeAdministratorPassword==, we should enter a long password with good complexity if we're deploying this in a production environment.
-		 ![[imgs/be35697f172a5035b88bddf9930f66f7_MD5.jpeg]]
+		 ![](../imgs/be35697f172a5035b88bddf9930f66f7_MD5.jpeg)
 	- We should the finally confirm the operation, we can choose 'A' to say yes to all prompts.
 > [!Note] 
 > It will take some time to complete the installation. i
@@ -120,12 +120,18 @@
 	Get-smbshare SYSVOL
 	```
 - Here is how it looks when running the commands above:
-	![[imgs/ceac5d84fcc644b5c294c0b475d1c97f_MD5.jpeg]]
-	![[imgs/58d5e65a30db626551acd195e1090c87_MD5.jpeg]]
-	![[imgs/f9afbf6bb24a1574e9c254202c631c23_MD5.jpeg]]
-	![[imgs/d1540cb182ecd29b31c108a286608f9c_MD5.jpeg]]
-	![[imgs/fcf0241ed324598c6bbc3021d2638512_MD5.jpeg]]
-	![[imgs/d1538d1f8d8b68200eb577b9c6c55c14_MD5.jpeg]]
+
+	![](../imgs/ceac5d84fcc644b5c294c0b475d1c97f_MD5.jpeg)
+
+	![](../imgs/58d5e65a30db626551acd195e1090c87_MD5.jpeg)
+
+	![](../imgs/f9afbf6bb24a1574e9c254202c631c23_MD5.jpeg)
+
+	![](../imgs/d1540cb182ecd29b31c108a286608f9c_MD5.jpeg)
+
+	![](../imgs/fcf0241ed324598c6bbc3021d2638512_MD5.jpeg)
+
+	![](../imgs/d1540cb182ecd29b31c108a286608f9c_MD5.jpeg)
 **Complete**
 - We have stood up a Domain Controller, fully functional with no records inside it, we'll be populating it with other tools online.
 - Next up is [[AD Enterprise Population]]
