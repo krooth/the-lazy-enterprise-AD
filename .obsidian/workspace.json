@@ -4,50 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0ae558eb0cb5390e",
+        "id": "3373aaa7106d999f",
         "type": "tabs",
         "children": [
           {
-            "id": "8a7c0ad94be88aca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "328ec7a65284d885",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "924a86d91b3c46e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "navigation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c49f4d5b51b6644a",
+            "id": "038495885943cd6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -59,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,28 +157,27 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c49f4d5b51b6644a",
+  "active": "038495885943cd6b",
   "lastOpenFiles": [
-    "imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg",
+    "templates/basic.template.md",
+    "imgs/4b3e9cb4e070aca26c57e1107ac26d06_MD5.jpeg",
+    "imgs/d1538d1f8d8b68200eb577b9c6c55c14_MD5.jpeg",
+    "imgs/be35697f172a5035b88bddf9930f66f7_MD5.jpeg",
+    "imgs/fcf0241ed324598c6bbc3021d2638512_MD5.jpeg",
+    "imgs/f9afbf6bb24a1574e9c254202c631c23_MD5.jpeg",
+    "imgs/2b9e6e5aee00f450ab2360ad210825be_MD5.jpeg",
+    "imgs/f1d4c9677821a8173916384f4a3c1b6d_MD5.jpeg",
+    "imgs/d1540cb182ecd29b31c108a286608f9c_MD5.jpeg",
+    "imgs/58d5e65a30db626551acd195e1090c87_MD5.jpeg",
+    "imgs/230003853bcb2c940c57a3f7a77df850_MD5.jpeg",
     "Active Directory Lab Build/AD Enterprise Population.md",
-    "Active Directory Lab Build/Building AD Lab.md",
     "README.md",
     "navigation.md",
-    "Untitled.md",
-    "DTE-L0150.md",
-    "imgs/Pasted image 20240225001922.png",
-    "imgs/Pasted image 20240224222400.png",
-    "imgs/49045218190e3ee7544c2ed91e474ea9_MD5.jpeg",
-    "imgs/Pasted image 20240224222345.png",
-    "imgs/340050bbed463a2c8a71c41ae6bf1b24_MD5.jpeg",
-    "imgs/Pasted image 20240224221135.png",
-    "imgs/fa8bdebbf3c7d89bc92b5dcf541cb7af_MD5.jpeg",
-    "imgs/c5f867a9bf1fa9898c02d2c3cfa44c41_MD5.jpeg",
-    "imgs/8d3a212d010df0e83eb3fb9f929c88ad_MD5.jpeg",
     "imgs",
-    "New folder",
+    "DTE-L0150.md",
+    "Active Directory Lab Build/Building AD Lab.md",
     "Active Directory Lab Build",
-    "templates/basic.template.md",
-    "templates"
+    "templates",
+    "New folder"
   ]
 }

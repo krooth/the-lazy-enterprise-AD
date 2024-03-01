@@ -27,7 +27,6 @@ New-ADUser -SamAccountName <User Name> -Name <Full Name> -UserPrinciapal "<User 
 	}
 ```
 
-[[imgs/49045218190e3ee7544c2ed91e474ea9_MD5.jpeg]]
 ![[imgs/49045218190e3ee7544c2ed91e474ea9_MD5.jpeg]]
 
 ##### Install Git #####
@@ -54,7 +53,6 @@ New-ADUser -SamAccountName <User Name> -Name <Full Name> -UserPrinciapal "<User 
 	.\Invoke-BadBlood.ps1
 	```
 - We are then prompted several times, to press any keys, and also we're promoted to type 'badblood' to add some randomness to the generated Users, Groups and Computers.
-[[imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg]]
 ![[imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg]]
 - This will take quite sometime and then we'll then see success in populating our AD, for better population, we can run badblood several times, as badblood generates d/t data each time around, to do that we follow the same step above.
 # {{References}}
