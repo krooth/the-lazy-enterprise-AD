@@ -134,7 +134,7 @@
 	![](../imgs/d1540cb182ecd29b31c108a286608f9c_MD5.jpeg)
 **Complete**
 - We have stood up a Domain Controller, fully functional with no records inside it, we'll be populating it with other tools online.
-- Next up is [[AD Enterprise Population]]
+- Next up is [AD Enterprise Population](https://github.com/krooth/lazy-AD/blob/main/Active%20Directory%20Lab%20Build/AD%20Enterprise%20Population.md)
 # {{References}}
 - [VMware Windows Server Virtualization](https://www.wikihow.com/Use-VMware-Workstation)
 - [VirtualBox For Beginners](https://www.youtube.com/watch?v=nvdnQX9UkMY)
