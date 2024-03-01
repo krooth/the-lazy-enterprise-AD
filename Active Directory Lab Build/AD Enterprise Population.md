@@ -12,7 +12,7 @@
 New-ADUser -SamAccountName <User Name> -Name <Full Name> -UserPrinciapal "<User Name>@doamin.domainextension" -AccountPassword(ConvertTo-SecureString <Your_Password> -AsPlainText -Force) -Enabled $true -Path "OU=<your_path>,DC=domain,DC=domainextension"
 ```
 
-![[../imgs/340050bbed463a2c8a71c41ae6bf1b24_MD5.jpeg]]
+![](../imgs/340050bbed463a2c8a71c41ae6bf1b24_MD5.jpeg)
 > [!Note]
 > The passwords used in this setup are not of best practice and are only used for Lab purpose. Production passwords should be way more secure than this.
 

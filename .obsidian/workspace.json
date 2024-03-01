@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "file": "Active Directory Lab Build/AD Enterprise Population.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "file": "Active Directory Lab Build/AD Enterprise Population.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md",
+                "file": "Active Directory Lab Build/AD Enterprise Population.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory Lab Build/Building AD Lab.md"
+                "file": "Active Directory Lab Build/AD Enterprise Population.md"
               }
             }
           }
@@ -154,11 +154,15 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
   "active": "038495885943cd6b",
   "lastOpenFiles": [
+    "README.md",
+    "navigation.md",
+    "Active Directory Lab Build/Building AD Lab.md",
     "Active Directory Lab Build/AD Enterprise Population.md",
     "templates/basic.template.md",
     "imgs/4b3e9cb4e070aca26c57e1107ac26d06_MD5.jpeg",
@@ -171,11 +175,8 @@
     "imgs/d1540cb182ecd29b31c108a286608f9c_MD5.jpeg",
     "imgs/58d5e65a30db626551acd195e1090c87_MD5.jpeg",
     "imgs/230003853bcb2c940c57a3f7a77df850_MD5.jpeg",
-    "README.md",
-    "navigation.md",
     "imgs",
     "DTE-L0150.md",
-    "Active Directory Lab Build/Building AD Lab.md",
     "Active Directory Lab Build",
     "templates",
     "New folder"
