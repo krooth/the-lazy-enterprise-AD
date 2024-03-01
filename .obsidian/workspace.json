@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d1632c69586e6882",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -158,12 +172,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "038495885943cd6b",
+  "active": "d1632c69586e6882",
   "lastOpenFiles": [
+    "Active Directory Lab Build/AD Enterprise Population.md",
+    "Untitled.md",
     "README.md",
     "navigation.md",
     "Active Directory Lab Build/Building AD Lab.md",
-    "Active Directory Lab Build/AD Enterprise Population.md",
     "templates/basic.template.md",
     "imgs/4b3e9cb4e070aca26c57e1107ac26d06_MD5.jpeg",
     "imgs/d1538d1f8d8b68200eb577b9c6c55c14_MD5.jpeg",
