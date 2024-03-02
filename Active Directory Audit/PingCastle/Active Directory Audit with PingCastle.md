@@ -58,6 +58,20 @@ date: 01-03-2024
  cd .\PingCastle\
  ```
  Alriiiiight! we've successfully installed/downloaded PingCastle...
-## Everything's better with cheese (I mean Audit, Darn It Bob)
-- So let's run pingcastle, now when we run pingcastle we have a general health check p
+## Everything's better with cheese (I mean Audit, Darn It Bob) ##
+- So let's run PingCastle, now there are different check options in it:
+### General health check ###
+- This is the default check, which est
+		```PowerShell
+		.\PingCastle --server <AD Server IP> --healthcheck --level Full --no-enum-limit
+		```
+		- server: specifies the target server (if we're running PingCastle we can use `localhost` or `127.0.0.1`)
+		- healthcheck: type of check we're performing
+		- level: specify the amount of data found in the xml file (Full, Normal, Light)
+		- no-enum-limit: remove the max 100 users limitation in html report
+
+> [!Note]
+> PingCastle has many more options, like sending html to emails, specifying exceptions and so much more, we can check that with the `--help` option.
+![](../../imgs/Pasted%20image%2020240302124021.png)
+	
 # {{References}}

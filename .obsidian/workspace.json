@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fbec32e977c2a898",
@@ -144,7 +145,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,6 +162,8 @@
   },
   "active": "5fcd4a30f00753fc",
   "lastOpenFiles": [
+    "imgs/Pasted image 20240302124059.png",
+    "imgs/Pasted image 20240302124021.png",
     "Active Directory Lab Build/Building AD Lab.md",
     "Active Directory Audit/PingCastle/Active Directory Audit with PingCastle.md",
     "Active Directory Audit/PingCastle",
@@ -174,7 +178,6 @@
     "imgs/ceac5d84fcc644b5c294c0b475d1c97f_MD5.jpeg",
     "imgs/c57d2f866388d63381d357ab05d121c5_MD5.jpeg",
     "imgs/be35697f172a5035b88bddf9930f66f7_MD5.jpeg",
-    "imgs/bb72b610a2804892a1e27cf4f12dafed_MD5.jpeg",
     "AD Enterprise Population.pdf",
     "templates/github_walkthrough.template.md",
     "Untitled.md",
