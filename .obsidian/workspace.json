@@ -4,63 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0ae558eb0cb5390e",
+        "id": "7f8ed453598c61b7",
         "type": "tabs",
         "children": [
           {
-            "id": "8a7c0ad94be88aca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "328ec7a65284d885",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "924a86d91b3c46e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "navigation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c49f4d5b51b6644a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory Lab Build/AD Enterprise Population.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "541b2b99410b249b",
+            "id": "5fcd4a30f00753fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -73,7 +21,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -191,12 +139,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,11 +158,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d8a300a291541424",
+  "active": "5fcd4a30f00753fc",
   "lastOpenFiles": [
-    "New folder",
-    "templates/basic.template.md",
-    "templates",
+    "Active Directory Lab Build/Building AD Lab.md",
+    "Active Directory Audit/PingCastle/Active Directory Audit with PingCastle.md",
+    "Active Directory Audit/PingCastle",
+    "Active Directory Audit",
+    "Active Directory Lab Build/AD Enterprise Population.md",
     "imgs/fcf0241ed324598c6bbc3021d2638512_MD5.jpeg",
     "imgs/f9afbf6bb24a1574e9c254202c631c23_MD5.jpeg",
     "imgs/f1d4c9677821a8173916384f4a3c1b6d_MD5.jpeg",
@@ -225,15 +175,22 @@
     "imgs/c57d2f866388d63381d357ab05d121c5_MD5.jpeg",
     "imgs/be35697f172a5035b88bddf9930f66f7_MD5.jpeg",
     "imgs/bb72b610a2804892a1e27cf4f12dafed_MD5.jpeg",
-    "Active Directory Audit/PingCastle/Active Directory Audit with PingCastle.md",
-    "Active Directory Audit/PingCastle",
-    "Active Directory Audit",
-    "Active Directory Lab Build/AD Enterprise Population.md",
-    "Active Directory Lab Build/Building AD Lab.md",
-    "README.md",
+    "AD Enterprise Population.pdf",
+    "templates/github_walkthrough.template.md",
+    "Untitled.md",
     "navigation.md",
+    "README.md",
+    "templates/blog.template",
+    "templates/basic.md",
+    "templates/basic.template",
+    "templates",
+    "New folder",
+    "AD Population.md",
+    "().md",
     "DTE-L0150.md",
+    "PowershellInput.md",
     "imgs",
-    "Active Directory Lab Build"
+    "Active Directory Lab Build",
+    "templates/basic.template.md"
   ]
 }
