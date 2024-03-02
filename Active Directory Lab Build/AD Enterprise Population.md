@@ -55,6 +55,8 @@ New-ADUser -SamAccountName <User Name> -Name <Full Name> -UserPrinciapal "<User 
 - We are then prompted several times, to press any keys, and also we're promoted to type 'badblood' to add some randomness to the generated Users, Groups and Computers.
 ![](../imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg)
 - This will take quite sometime and then we'll then see success in populating our AD, for better population, we can run badblood several times, as badblood generates d/t data each time around, to do that we follow the same step above.
+- We'll be working group policy and best practices for AD, and at that time I'll be exporting the Group Policies and we'll be going over a guide on how to implement them.
+- Next up is Active Directory Security Audit with PingCastle
 # {{References}}
 - https://www.secframe.com/badblood/
 - https://github.com/davidprowe/BadBlood?tab=readme-ov-file
