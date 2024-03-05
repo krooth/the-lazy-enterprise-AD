@@ -79,5 +79,6 @@ date: 01-03-2024
 ![](../../imgs/Pasted%20image%2020240305224838.png)
 - Well it's official we've our first report, however in an Enterprise environment a quick health check.
 ### Scanners ###
-- 
+- Like we spoke earlier, we have several type of scanners we can run to gather better information about our domain environment.
+	- 
 # {{References}}
