@@ -80,5 +80,17 @@ date: 01-03-2024
 - Well it's official we've our first report, however in an Enterprise environment a quick health check.
 ### Scanners ###
 - Like we spoke earlier, we have several type of scanners we can run to gather better information about our domain environment.
-	- 
+	- aclcheck: checks authorization related to users or groups
+	- antivirus: checks for computers without known antivirus installed.
+	- computerversion: checks version of OS's, which help determine if we're using obsolete OS's
+	- foreignusers: use trusts to enumerate users located in domain denied such as bastion or domains too far away.
+	- laps_bitlocker: check if LAPS and/or Bitlocker is enabled,
+	- localadmin: Enumerate the local administrators of a computer.
+	- nullsession: check if null sessions are enabled.
+	- remote: chek if an rdp solution is installed on computers.
+	- share: scan for local share and result shows if share has been accessed by anyone.
+	- smb: determines smb version available and if smb signing is applied.
+	- spooler: cheks if the spooler service is remotely active.
+	- startup: retrieves the last date of startup.
+	- zerologon: check for zerologon vulnerability.
 # {{References}}
