@@ -5,24 +5,48 @@
       "path": "Active Directory Audit/PingCastle/Active Directory Audit with PingCastle.md"
     },
     {
-      "basename": "README",
-      "path": "README.md"
+      "basename": "Building AD Lab",
+      "path": "Active Directory Lab Build/Building AD Lab.md"
     },
     {
       "basename": "AD Enterprise Population",
       "path": "Active Directory Lab Build/AD Enterprise Population.md"
     },
     {
+      "basename": "AD Enterprise Population",
+      "path": "AD Enterprise Population.pdf"
+    },
+    {
+      "basename": "github_walkthrough.template",
+      "path": "templates/github_walkthrough.template.md"
+    },
+    {
       "basename": "navigation",
       "path": "navigation.md"
     },
     {
-      "basename": "Building AD Lab",
-      "path": "Active Directory Lab Build/Building AD Lab.md"
+      "basename": "README",
+      "path": "README.md"
     },
     {
-      "basename": "2a5bc352d041f5137be746733f537fd5_MD5",
-      "path": "imgs/2a5bc352d041f5137be746733f537fd5_MD5.jpeg"
+      "basename": "Pasted image 20240215222225",
+      "path": "imgs/Pasted image 20240215222225.png"
+    },
+    {
+      "basename": "Pasted image 20240214231223",
+      "path": "imgs/Pasted image 20240214231223.png"
+    },
+    {
+      "basename": "Pasted image 20240213223021",
+      "path": "imgs/Pasted image 20240213223021.png"
+    },
+    {
+      "basename": "Pasted image 20240213222858",
+      "path": "imgs/Pasted image 20240213222858.png"
+    },
+    {
+      "basename": "Pasted image 20240213222711",
+      "path": "imgs/Pasted image 20240213222711.png"
     }
   ],
   "omittedPaths": [],
