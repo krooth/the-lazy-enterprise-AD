@@ -1,7 +1,3 @@
----
-tags: 
-date: 01-03-2024
----
 
 # Active Directory Audit with PingCastle (Part 1)
 - Whenever we consider Information Security, our first priorities are our crown jewels, this are our most critical assets that require the highest level of protection. 
