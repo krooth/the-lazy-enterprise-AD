@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "fbec32e977c2a898",
@@ -149,7 +150,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -162,21 +162,22 @@
   },
   "active": "5fcd4a30f00753fc",
   "lastOpenFiles": [
-    "Active Directory Lab Build/Building AD Lab.md",
-    "Active Directory Lab Build/AD Enterprise Population.md",
+    "imgs/Pasted image 20240306125355.png",
+    "imgs/Pasted image 20240306125256.png",
+    "imgs/Pasted image 20240306124403.png",
+    "imgs/Pasted image 20240306124003.png",
+    "imgs/Pasted image 20240306122211.png",
     "imgs/Pasted image 20240305224838.png",
-    "Active Directory Audit/PingCastle/Active Directory Audit with PingCastle.md",
     "imgs/Pasted image 20240302124059.png",
     "imgs/Pasted image 20240302124021.png",
+    "Active Directory Lab Build/Building AD Lab.md",
+    "Active Directory Audit/PingCastle/Active Directory Audit with PingCastle.md",
     "Active Directory Audit/PingCastle",
     "Active Directory Audit",
+    "Active Directory Lab Build/AD Enterprise Population.md",
     "imgs/fcf0241ed324598c6bbc3021d2638512_MD5.jpeg",
     "imgs/f9afbf6bb24a1574e9c254202c631c23_MD5.jpeg",
     "imgs/f1d4c9677821a8173916384f4a3c1b6d_MD5.jpeg",
-    "imgs/db3e4c9fbc904b0a50c350e97e20b9fb_MD5.jpeg",
-    "imgs/d1540cb182ecd29b31c108a286608f9c_MD5.jpeg",
-    "imgs/d1538d1f8d8b68200eb577b9c6c55c14_MD5.jpeg",
-    "imgs/ceac5d84fcc644b5c294c0b475d1c97f_MD5.jpeg",
     "AD Enterprise Population.pdf",
     "templates/github_walkthrough.template.md",
     "Untitled.md",

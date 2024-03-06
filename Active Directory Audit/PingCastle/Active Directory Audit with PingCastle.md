@@ -3,7 +3,7 @@ tags:
 date: 01-03-2024
 ---
 
-# Active Directory Audit with PingCastle
+# Active Directory Audit with PingCastle (Part 1)
 - Whenever we consider Information Security, our first priorities are our crown jewels, this are our most critical assets that require the highest level of protection. 
 - Typical examples of this are:
 	- Databases (Patient Records, PII DBs ...)
@@ -93,4 +93,46 @@ date: 01-03-2024
 	- spooler: cheks if the spooler service is remotely active.
 	- startup: retrieves the last date of startup.
 	- zerologon: check for zerologon vulnerability.
+
+```PowerShell
+.\PingCastle.exe --scanner antivirus
+.\PingCastle.exe --scanner computerversion
+.\PingCastle.exe --scanner laps_bitlocker
+.\PingCastle.exe --scanner localadmin
+.\PingCastle.exe --scanner nullsession
+.\PingCastle.exe --scanner remote
+.\PingCastle.exe --scanner share
+.\PingCastle.exe --scanner smb
+.\PingCastle.exe --scanner spooler
+.\PingCastle.exe --scanner startup
+.\PingCastle.exe --scanner zerologon
+```
+
+> [!Reminder]
+> When running this scanners we're prompted if we want to scan all computers or the domain we'd like to scan, it's important to scan all computers in the domain and specify or use the default domain listed there, unless we're auditing specific computers and/or other domains.
+
+![](../../imgs/Pasted%20image%2020240306122211.png)
+- No finally we've scanned and checked our AD, the only thing left for us is to check the reports generated and address the issues.
+- For convenience purposes, I personally like to collect and keep the generated reports in one directory and also organize the audit, an easy way to identify the generated reports is that, all the reports have the name of our domain. 
+```PowerShell
+$today = Get-Date -Format "dd_MM_yyy"
+mkdir audit_report_$today
+Move-Item *<domain name>* <to this directory we created earlier>
+```
+
+![](../../imgs/Pasted%20image%2020240306124003.png)
+
+- Now let's cd to our new report directory and check the html output
+```PowerShell
+	cd audit_report_$today
+```
+![](../../imgs/Pasted%20image%2020240306124403.png)
+- As we can see above we have our reports here, now this report can be use differently, we can use the xml output to ingest to other tools.
+- So let's finally check our html report, (Got be honest Bob, super excited. This is going to be a burger flip)
+![](../../imgs/Pasted%20image%2020240306125355.png)
+- I'll take that back, Well this is just great!
+- We'll be going over the report in Part 2, and see what each warnings and scores are, how we can solve them or why we won't solve them, because business needs differ from organization to organization, and we might not be able to apply every recommended solutions.
+- Okay I've got to go, [Bob's voice] `Linda, Honey...Linda`
 # {{References}}
+- [Methodology](https://pingcastle.com/methodology/)
+- [Documentation](https://pingcastle.com/methodology/)
