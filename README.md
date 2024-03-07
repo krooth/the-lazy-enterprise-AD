@@ -27,16 +27,6 @@ While going over each assessments, we'll also be solving each configurations fla
 - Wazuh SIEM/XDR monitoring
 - Active Response With Wazuh
 #### AD Hacking ####
-- Reconnaissance 
-- Responder
-- Relay Attacks
-- User Discovery
-- Password Attacks
-- Domain Enumeration
-- Bloodhound
-- Kerberos Attacks
-- DCSYNC
-- ADCS
-- Privilege Escalation
+- TBD
 # {{References}}
 
