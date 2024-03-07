@@ -1,9 +1,5 @@
----
-tags: 
-date: 01-03-2024
----
 
-# Active Directory Audit with PingCastle
+# Active Directory Audit with PingCastle (Part 1)
 - Whenever we consider Information Security, our first priorities are our crown jewels, this are our most critical assets that require the highest level of protection. 
 - Typical examples of this are:
 	- Databases (Patient Records, PII DBs ...)
@@ -80,5 +76,59 @@ date: 01-03-2024
 - Well it's official we've our first report, however in an Enterprise environment a quick health check.
 ### Scanners ###
 - Like we spoke earlier, we have several type of scanners we can run to gather better information about our domain environment.
-	- 
+	- aclcheck: checks authorization related to users or groups
+	- antivirus: checks for computers without known antivirus installed.
+	- computerversion: checks version of OS's, which help determine if we're using obsolete OS's
+	- foreignusers: use trusts to enumerate users located in domain denied such as bastion or domains too far away.
+	- laps_bitlocker: check if LAPS and/or Bitlocker is enabled,
+	- localadmin: Enumerate the local administrators of a computer.
+	- nullsession: check if null sessions are enabled.
+	- remote: chek if an rdp solution is installed on computers.
+	- share: scan for local share and result shows if share has been accessed by anyone.
+	- smb: determines smb version available and if smb signing is applied.
+	- spooler: cheks if the spooler service is remotely active.
+	- startup: retrieves the last date of startup.
+	- zerologon: check for zerologon vulnerability.
+
+```PowerShell
+.\PingCastle.exe --scanner antivirus
+.\PingCastle.exe --scanner computerversion
+.\PingCastle.exe --scanner laps_bitlocker
+.\PingCastle.exe --scanner localadmin
+.\PingCastle.exe --scanner nullsession
+.\PingCastle.exe --scanner remote
+.\PingCastle.exe --scanner share
+.\PingCastle.exe --scanner smb
+.\PingCastle.exe --scanner spooler
+.\PingCastle.exe --scanner startup
+.\PingCastle.exe --scanner zerologon
+```
+
+> [!Reminder]
+> When running this scanners we're prompted if we want to scan all computers or the domain we'd like to scan, it's important to scan all computers in the domain and specify or use the default domain listed there, unless we're auditing specific computers and/or other domains.
+
+![](../../imgs/Pasted%20image%2020240306122211.png)
+- No finally we've scanned and checked our AD, the only thing left for us is to check the reports generated and address the issues.
+- For convenience purposes, I personally like to collect and keep the generated reports in one directory and also organize the audit, an easy way to identify the generated reports is that, all the reports have the name of our domain. 
+```PowerShell
+$today = Get-Date -Format "dd_MM_yyy"
+mkdir audit_report_$today
+Move-Item *<domain name>* <to this directory we created earlier>
+```
+
+![](../../imgs/Pasted%20image%2020240306124003.png)
+
+- Now let's cd to our new report directory and check the html output
+```PowerShell
+	cd audit_report_$today
+```
+![](../../imgs/Pasted%20image%2020240306124403.png)
+- As we can see above we have our reports here, now this report can be use differently, we can use the xml output to ingest to other tools.
+- So let's finally check our html report, (Got be honest Bob, super excited. This is going to be a burger flip)
+![](../../imgs/Pasted%20image%2020240306125355.png)
+- I'll take that back, Well this is just great!
+- We'll be going over the report in Part 2, and see what each warnings and scores are, how we can solve them or why we won't solve them, because business needs differ from organization to organization, and we might not be able to apply every recommended solutions.
+- Okay I've got to go, [Bob's voice] `Linda, Honey...Linda`
 # {{References}}
+- [Methodology](https://pingcastle.com/methodology/)
+- [Documentation](https://pingcastle.com/methodology/)
